@@ -28,7 +28,7 @@ class NumericalSystem:
         binary = bin(int(decimal))[2:]
         return binary
 
-    def convert_binary_to_ascii_decimal(self, value: str | list[int]) -> int:
+    def convert_binary_to_decimal(self, value: str | list[int]) -> int:
         """
             Convert the binary value to ASCII decimal and return it as an integer\n
             :param value as string or list of integer: The binary value(s) to be converted
@@ -76,22 +76,22 @@ def main():
     print(1, ns.convert_text_to_binary(value="Cy8er"))
     print(2, ns.convert_binary_to_text(value=binary_value))
     print(3, ns.convert_char_to_decimal(value="a"))
-    print(4, ns.convert_binary_to_ascii_decimal(value="00001000"))
+    print(4, ns.convert_binary_to_decimal(value="00001000"))
     print(5, ns.convert_decimal_to_binary(199))
     print(6, ns.convert_decimal_to_binary(222))
-    print(7, ns.convert_binary_to_ascii_decimal(value="00101110"))
-    print(8, ns.convert_binary_to_ascii_decimal(value="11111111"))
+    print(7, ns.convert_binary_to_decimal(value="00101110"))
+    print(8, ns.convert_binary_to_decimal(value="11111111"))
     print(9, ns.convert_char_to_decimal(value="#"))
     print(10, ns.convert_decimal_to_binary(25))
-    print(11, ns.convert_binary_to_ascii_decimal(value="1010101010"))
+    print(11, ns.convert_binary_to_decimal(value="1010101010"))
     print(12, ns.convert_char_to_decimal(value="%"))
-    print(13, ns.convert_binary_to_ascii_decimal(value="1101"))
+    print(13, ns.convert_binary_to_decimal(value="1101"))
     print(14, ns.convert_char_to_decimal(value=" "))
     print(15, ns.convert_decimal_to_binary(160))
     print(16, ns.convert_decimal_to_binary(100))
     print(17, ns.convert_char_to_decimal(value="0"))
     print(18, ns.convert_char_to_decimal(value="Q"))
-    print(19, ns.convert_binary_to_ascii_decimal(value="101"))
+    print(19, ns.convert_binary_to_decimal(value="101"))
     print(20, ns.convert_char_to_decimal(value="@"))
 
 
@@ -105,5 +105,25 @@ def main():
     print(ns.convert_decimal_to_binary(55))
 
 
+    print(ns.convert_binary_to_text("01001011 01101110 01101111 01110111 01101100"))
+    print(ns.convert_char_to_decimal("Z"))
+    print(ns.convert_binary_to_decimal("10101010"))
+    print(ns.convert_decimal_to_binary(157))
+    print(ns.convert_decimal_to_binary("64"))
+    print(ns.convert_binary_to_decimal("10011010"))
+    print(ns.convert_binary_to_decimal("00011100"))
+    print(ns.convert_char_to_decimal("!"))
+    print(ns.convert_binary_to_text("01010110 01101001 01110011 01101001 01101111"))
+    print(ns.convert_char_to_decimal("x"))
+    print(ns.convert_binary_to_decimal("01010101"))
+    print(ns.convert_decimal_to_binary(76))
+    print(ns.convert_decimal_to_binary(51))
+    print(ns.convert_binary_to_decimal("00110101"))
+    print(ns.convert_binary_to_decimal("11010001"))
+    print(ns.convert_char_to_decimal("|"))
+    print(ns.convert_text_to_binary("Hello World"))
+    print(ns.convert_binary_to_decimal("00000001"))
+    print(ns.convert_decimal_to_binary(128))
+    print(ns.convert_char_to_decimal("B"))
 if __name__ == '__main__':
     main()
